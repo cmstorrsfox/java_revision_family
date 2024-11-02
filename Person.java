@@ -62,6 +62,9 @@ public class Person {
   //set residence
   public void setResidence(Residence newResidence) {
     this.residence = newResidence;
+    if (!newResidence.getResidents().contains(this)) {
+      newResidence.addResident(this);      
+    }
   }
 
   //methods

@@ -15,9 +15,5 @@ public class App {
     storrsFox.addFamilyMember(khoa);
     
     Residence storrsFoxResidence = new Residence("Flat 1, 5 Lakeview Lane, Mytchett, Camberley, Surrey, GU16 6HA", 2, 375000, "26/07/2022");
-
-    for (FamilyMember member : storrsFox.getMembers()) {
-      member.setResidence(storrsFoxResidence);
-    }
   }
 }
