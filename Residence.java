@@ -21,6 +21,7 @@ public class Residence {
     this.purchaseDate = purchaseDate;
     this.residents = new ArrayList<Person>();
     this.owners = new ArrayList<Owner>();
+
   }
 
   //datetime formatting method
@@ -94,6 +95,7 @@ public class Residence {
   //remove residents
   public void removeResident(Person resident) {
     residents.remove(this.residents.indexOf(resident));
+    resident.setResidence(null);
   }
 
   //print residence data
